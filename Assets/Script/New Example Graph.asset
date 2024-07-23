@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df82b487079a6ee4da5f1d706ed682ca, type: 3}
+  m_Name: New Example Graph
+  m_EditorClassIdentifier: 
+  serializedNodes: []
+  nodes:
+  - rid: 1180733088591773708
+  - rid: 1180733088591773709
+  - rid: 1180733088591773710
+  - rid: 1180733088591773711
+  edges:
+  - GUID: 3a01451e-d02e-4178-9bee-88d4eb986e00
+    owner: {fileID: 11400000}
+    inputNodeGUID: ad2dd9d4-c4bd-4544-a58c-5bcccd3a625e
+    outputNodeGUID: e83c0440-1556-4031-bf5b-8f5f7126ea6d
+    inputFieldName: _input
+    outputFieldName: _output
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: a81b85a2-e982-4efb-8bac-d51932a92868
+    owner: {fileID: 11400000}
+    inputNodeGUID: e83c0440-1556-4031-bf5b-8f5f7126ea6d
+    outputNodeGUID: a815add3-c1d0-4f0f-bf72-052d1c4dc811
+    inputFieldName: _input2
+    outputFieldName: _output
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 72cf4f3f-60a8-463f-91bf-46af4b175c94
+    owner: {fileID: 11400000}
+    inputNodeGUID: e83c0440-1556-4031-bf5b-8f5f7126ea6d
+    outputNodeGUID: b4f6bd6f-7f40-4d14-9db6-ab3990c81821
+    inputFieldName: _input1
+    outputFieldName: _output
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  groups: []
+  stackNodes: []
+  pinnedElements:
+  - position:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 150
+      height: 200
+    opened: 1
+    editorType:
+      serializedType: GraphProcessor.ExposedParameterView, com.alelievr.NodeGraphProcessor.Editor,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - position:
+      serializedVersion: 2
+      x: 124
+      y: 35
+      width: 139
+      height: 168
+    opened: 0
+    editorType:
+      serializedType: GraphProcessor.ProcessorView, com.alelievr.NodeGraphProcessor.Editor,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  exposedParameters: []
+  serializedParameterList: []
+  stickyNotes: []
+  nodeInspectorReference: {fileID: 0}
+  position: {x: -297.6, y: -376.8, z: 0}
+  scale: {x: 1.15, y: 1.15, z: 1}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1180733088591773708
+      type: {class: Float2Node, ns: , asm: Assembly-CSharp}
+      data:
+        nodeCustomName: 
+        GUID: b4f6bd6f-7f40-4d14-9db6-ab3990c81821
+        computeOrder: 0
+        position:
+          serializedVersion: 2
+          x: 413
+          y: 328
+          width: 102
+          height: 99
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        _output: 0
+        _input: 0
+    - rid: 1180733088591773709
+      type: {class: AddNode, ns: , asm: Assembly-CSharp}
+      data:
+        nodeCustomName: 
+        GUID: e83c0440-1556-4031-bf5b-8f5f7126ea6d
+        computeOrder: 2
+        position:
+          serializedVersion: 2
+          x: 671
+          y: 427
+          width: 100
+          height: 99
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        _input1: 0
+        _input2: 0
+        _output: 0
+    - rid: 1180733088591773710
+      type: {class: ResultNode, ns: , asm: Assembly-CSharp}
+      data:
+        nodeCustomName: 
+        GUID: ad2dd9d4-c4bd-4544-a58c-5bcccd3a625e
+        computeOrder: 3
+        position:
+          serializedVersion: 2
+          x: 980
+          y: 427
+          width: 78
+          height: 99
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        _input: 0
+    - rid: 1180733088591773711
+      type: {class: Float2Node, ns: , asm: Assembly-CSharp}
+      data:
+        nodeCustomName: 
+        GUID: a815add3-c1d0-4f0f-bf72-052d1c4dc811
+        computeOrder: 1
+        position:
+          serializedVersion: 2
+          x: 413
+          y: 531.5
+          width: 102
+          height: 99
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        _output: 0
+        _input: 0
