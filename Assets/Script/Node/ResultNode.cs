@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 
 [Serializable]
-[NodeMenuItem("Custom/result")]
+[NodeMenuItem("Custom/Result")]
 public class ResultNode : BaseNode
 {
     [Input(name = "Result")]
@@ -17,5 +17,6 @@ public class ResultNode : BaseNode
     protected override void Process()
     {
         _result = _input;
+        Debug.Log(_result);
     }
 }

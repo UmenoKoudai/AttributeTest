@@ -9,9 +9,4 @@ public class Charactor : MonoBehaviour
     [SerializeField, Popup(1, 2, 3)]
     int _value3;
 
-    private void Update()
-    {
-        Debug.Log($"String{_value2}");
-        Debug.Log($"Int{_value3}");
-    }
 }

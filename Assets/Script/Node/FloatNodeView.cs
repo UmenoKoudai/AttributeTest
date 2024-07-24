@@ -12,11 +12,11 @@ public class FloatNodeView : BaseNodeView
 
         floatNode.onProcessed += () => floatField.value = floatNode._input;
 
-        //floatField.RegisterValueChangedCallback((v) =>
-        //{
-        //    owner.RegisterCompleteObjectUndo("Update floatNode input");
-        //    floatNode._input = (float)v.newValue;
-        //});
+        floatField.RegisterValueChangedCallback((v) =>
+        {
+            owner.RegisterCompleteObjectUndo("Update floatNode input");
+            floatNode._input = (float)v.newValue;
+        });
 
         controlsContainer.Add(floatField);
     }
